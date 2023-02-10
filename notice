@@ -1,0 +1,19 @@
+function calc(num1, num2, apperand) {
+    switch (apperand) {
+        case "+":
+            return num1 + num2
+        case "-":
+            return num1 - num2
+        case "*":
+            return num1 * num2
+        case "/":
+            return num1 / num2
+        default:
+            console.log('Не известный оператор!')
+            return 0
+    }
+}
+const num1 = Number(prompt("Введите первое число"))
+const num2 = Number(prompt("Введите второе число"))
+const oper = prompt("Введите оператор")
+alert(`Ответ: ${calc(num1, num2, oper)}`)
